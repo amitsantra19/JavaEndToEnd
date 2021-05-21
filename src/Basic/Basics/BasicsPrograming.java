@@ -1,11 +1,17 @@
 package Basic.Basics;
 
+import Basic.JavaOOPConcepts.JavaAbstractions.JavaAbstractions;
+
 public class BasicsPrograming {
     public static void main(String[] args) {
         System.out.println("Hello Java");
         introduceDataType();
         introduceConditionalStatement();
         introduceBasicLoopInJava();
+        /* ******************JAVA OOPs Concept****************************/
+        JavaAbstractions.sendEmails();
+
+
     }
 
     public static void introduceDataType()
@@ -101,8 +107,4 @@ public class BasicsPrograming {
                 System.out.println("No loop Executed");
         }
     }
-
-
-
-
 }
