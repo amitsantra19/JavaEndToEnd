@@ -1,6 +1,7 @@
 package Basic.Basics;
 
 import Basic.JavaOOPConcepts.JavaAbstractions.JavaAbstractions;
+import Basic.JavaOOPConcepts.JavaEncapsulation.JavaEncapsulation;
 
 public class BasicsPrograming {
     public static void main(String[] args) {
@@ -10,8 +11,10 @@ public class BasicsPrograming {
         introduceBasicLoopInJava();
         /* ******************JAVA OOPs Concept****************************/
         JavaAbstractions.sendEmails();
-
-
+        int deposit = JavaEncapsulation.depositMoney(1000);
+        System.out.println(deposit);
+        int withdraw = JavaEncapsulation.wthDrawMoney(500);
+        System.out.println(withdraw);
     }
 
     public static void introduceDataType()
