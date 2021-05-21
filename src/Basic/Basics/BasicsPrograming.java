@@ -2,6 +2,7 @@ package Basic.Basics;
 
 import Basic.JavaOOPConcepts.JavaAbstractions.JavaAbstractions;
 import Basic.JavaOOPConcepts.JavaEncapsulation.JavaEncapsulation;
+import Basic.JavaOOPConcepts.JavaInheritance.MultilevelInheritance.MultilevelInheritance;
 import Basic.JavaOOPConcepts.JavaInheritance.SingleInheritance.SingleInheritance;
 
 public class BasicsPrograming {
@@ -16,10 +17,19 @@ public class BasicsPrograming {
         System.out.println(deposit);
         int withdraw = JavaEncapsulation.wthDrawMoney(500);
         System.out.println(withdraw);
+        //Single Inheritance
+        System.out.println("Single Inheritance Example");
         SingleInheritance si = new SingleInheritance();
         si.display(); // calling base class public method using drive class object
         si.displayDrive();
         //si.show(); compilation error due to not accessible
+
+        //Multi Level inheritance
+        System.out.println("Multilevel Inheritance Example");
+        MultilevelInheritance mi = new MultilevelInheritance();
+        mi.display();
+        mi.show();
+        mi.multilevelShow();
     }
 
     public static void introduceDataType()
