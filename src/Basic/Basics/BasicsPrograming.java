@@ -5,7 +5,7 @@ public class BasicsPrograming {
         System.out.println("Hello Java");
         introduceDataType();
         introduceConditionalStatement();
-
+        introduceBasicLoopInJava();
     }
 
     public static void introduceDataType()
@@ -71,6 +71,38 @@ public class BasicsPrograming {
                 System.out.println("Default Executed");
         }
     }
+
+    public static  void introduceBasicLoopInJava(){
+        String loop = "while";
+        int i = 0;
+        switch(loop){
+            case "for":
+                System.out.println("For loop Executed");
+                for(i = 0;i<4;i++)
+                {
+                    System.out.print(i);
+                }
+                break;
+            case "while":
+                System.out.println("While loop Executed");
+                while (i<4){
+                    System.out.print(i);
+                    i++;
+                }
+                break;
+            case "do-while" :
+                System.out.println("Do While loop Executed");
+                do{
+                    System.out.print(i);
+                    i++;
+                }while(i<4);
+                break;
+            default:
+                System.out.println("No loop Executed");
+        }
+    }
+
+
 
 
 }
