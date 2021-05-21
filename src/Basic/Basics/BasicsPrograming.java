@@ -2,6 +2,7 @@ package Basic.Basics;
 
 import Basic.JavaOOPConcepts.JavaAbstractions.JavaAbstractions;
 import Basic.JavaOOPConcepts.JavaEncapsulation.JavaEncapsulation;
+import Basic.JavaOOPConcepts.JavaInheritance.SingleInheritance.SingleInheritance;
 
 public class BasicsPrograming {
     public static void main(String[] args) {
@@ -15,6 +16,10 @@ public class BasicsPrograming {
         System.out.println(deposit);
         int withdraw = JavaEncapsulation.wthDrawMoney(500);
         System.out.println(withdraw);
+        SingleInheritance si = new SingleInheritance();
+        si.display(); // calling base class public method using drive class object
+        si.displayDrive();
+        //si.show(); compilation error due to not accessible
     }
 
     public static void introduceDataType()
